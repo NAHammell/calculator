@@ -1,9 +1,16 @@
+#display {
+    width: 200px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 5px 5px 0px 0px;
+}
+
 #buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 260px;
     gap: 2px;
 }
 
