@@ -1,20 +1,38 @@
 #display {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     width: 200px;
     height: 60px;
     background-color: gray;
+    color: white;
     border-radius: 5px 5px 0px 0px;
 }
 
 #buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
     width: 200px;
     height: 260px;
     gap: 2px;
 }
 
-#zero {
+#numPad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+}
+
+#functions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+}
+
+.zero {
     grid-column-start: 1;
     grid-column-end: 4;
 }
